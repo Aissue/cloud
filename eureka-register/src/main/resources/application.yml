@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: register
+server:
+  port: 8180
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8180/eureka/
+#  server:
+#    enable-self-preservation: false # 设为false，关闭自我保护机制
+#    eviction-interval-timer-in-ms: 5000 # 清理无效节点间隔：5S（单位毫秒，默认是60*1000）
+
+
+
