@@ -1,0 +1,18 @@
+server:
+  port: 8184
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /feign/**
+      serviceId: service-feign
+    api-b:
+      path: /feign1/**
+      serviceId: service-feign1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8180/eureka/

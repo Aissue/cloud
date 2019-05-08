@@ -33,7 +33,7 @@
 
     <modules>
 		<module>eureka-register</module>
-		<module>eureka-consumer1</module>
+		<module>eureka-feign</module>
 		<module>eureka-provider1</module>
     </modules>
 	<dependencyManagement>
