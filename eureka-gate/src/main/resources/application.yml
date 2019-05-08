@@ -11,8 +11,3 @@ zuul:
     api-b:
       path: /feign1/**
       serviceId: service-feign1
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8180/eureka/

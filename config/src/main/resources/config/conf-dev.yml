@@ -1,0 +1,7 @@
+#eureka配置
+eureka:
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+          defaultZone: http://localhost:8180/eureka/
