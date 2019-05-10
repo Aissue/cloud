@@ -1,7 +1,7 @@
-spring:
-  cloud:
-    config:
-      label: master
-      uri: http://localhost:8170
-      name: conf
-      profile: ${config.profile:dev}
+#spring:
+#  cloud:
+#    config:
+#      label: master
+#      uri: http://localhost:8170
+#      name: conf
+#      profile: ${config.profile:dev}

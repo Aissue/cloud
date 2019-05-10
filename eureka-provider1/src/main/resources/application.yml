@@ -4,6 +4,22 @@ spring:
   application:
     name: provider1
 
+eureka:
+  instance:
+    metadataMap:
+      group: example-service-group
+      version: 1.0
+      region: dev
+nacos:
+  server-addr: localhost:8080
+
+managerment:
+  security:
+    enabled: false
+  server:
+    port: 5100
+
+
 #eureka:
 #  client:
 #    service-url:

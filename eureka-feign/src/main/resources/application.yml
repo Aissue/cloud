@@ -6,3 +6,19 @@ feign:
 spring:
   application:
     name: service-feign
+
+eureka:
+  instance:
+    hostname: localhost
+    metadataMap:
+      group: example-service-group
+      version: 1.0
+      region: dev
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8180/eureka/
+
+nacos:
+  server-addr: localhost:8848
