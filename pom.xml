@@ -34,6 +34,7 @@
 		<module>eureka-register</module>
 		<module>eureka-feign</module>
 		<module>eureka-provider1</module>
+		<module>eureka-provider2</module>
 		<module>eureka-gate</module>
 		<module>config</module>
     </modules>

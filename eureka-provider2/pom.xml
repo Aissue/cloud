@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.aissue</groupId>
-    <artifactId>eureka-provider1</artifactId>
+    <artifactId>eureka-provider2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-provider1</name>
-    <description>服务提供者1</description>
+    <name>eureka-provider2</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -25,28 +25,16 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.nepxion</groupId>
             <artifactId>discovery-plugin-starter-eureka</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.nepxion</groupId>
-            <artifactId>discovery-plugin-config-center-starter-nacos</artifactId>
         </dependency>
     </dependencies>
 
