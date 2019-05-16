@@ -1,8 +1,27 @@
 server:
-  port: 8182
+  port: 0
 spring:
   application:
     name: provider1
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 127.0.0.1
+                port: 5672
+                username: guest
+                password: guest
+                virtual-host: /
+      bindings:
+        msgReceiver:
+          destination: testRabbit
+          content-type: text/plain # 设置消息类型，本次为对象json，如果是文本则设置“text/plain”
+          binder: defaultRabbit
+          group: abc
 
 eureka:
   instance:

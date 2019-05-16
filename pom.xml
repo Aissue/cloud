@@ -37,6 +37,7 @@
 		<module>eureka-provider2</module>
 		<module>eureka-gate</module>
 		<module>config</module>
+        <module>public-model</module>
     </modules>
 	<dependencyManagement>
 		<dependencies>
